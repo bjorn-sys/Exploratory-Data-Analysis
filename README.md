@@ -1,147 +1,149 @@
 ---
 
-📊 Adidas Sales Dataset Analysis
+# 📊 Adidas Sales Dataset Analysis
 
-📝 Overview
+# 📝 Overview
 
-This project performs a comprehensive analysis of the Adidas Sales Dataset to understand sales performance across regions, products, and sales methods. Key metrics such as seasonal trends, monthly/yearly performance, product contributions, and operating profit are explored. The objective is to generate actionable insights and business recommendations to help Adidas optimize its sales strategies and profitability.
-
-
----
-
-📁 Dataset Description
-
-The dataset includes transactional sales records with the following key fields:
-
-Engineered Features:
+* This project performs a comprehensive analysis of the Adidas Sales Dataset to understand sales performance across regions, products, and sales methods. Key metrics such as seasonal trends, monthly/yearly performance, product contributions, and operating profit are explored. The objective is to generate actionable insights and business recommendations to help Adidas optimize its sales strategies and profitability.
 
 
 ---
 
-🎯 Project Objectives
+# 📁 Dataset Description
 
-Clean and preprocess Adidas sales data
+* The dataset includes transactional sales records with the following key fields:
+# Engineered Features
 
-Analyze sales performance across:
-
-Products
-
-Regions
-
-Retailers
-
-Sales methods
-
-Time (month, season, year)
-
-
-Calculate product contribution to overall sales
-
-Estimate operating profit
-
-Recommend data-driven strategies
-
-
-
+* Month
+* Day
+* Year
+* Operating profit
+* Seasons
 ---
 
-🔍 Exploratory Data Analysis (EDA)
+#🎯 Project Objectives
 
-🛒 Sales Method Analysis
+* Clean and preprocess Adidas sales data
 
-Retail is the dominant channel, generating over 50% of total revenue.
+* Analyze sales performance across:
 
-Online sales showed steady growth, particularly in Q2 and Q3.
+* Products
 
-Wholesale had fewer transactions but higher average profit margins.
+* Regions
 
+* Retailers
 
-📅 Time-Based Analysis
+* Sales methods
 
-Monthly Trends:
+* Time (month, season, year)
 
-Peak months: June, August, November
+* Calculate product contribution to overall sales
 
-Lowest sales observed in February and September
+* Estimate operating profit
 
-
-Yearly Trends:
-
-Year-over-year growth in total revenue and profit.
-
-Profit margins improved marginally each year.
-
-
-Seasonal Analysis:
-
-Summer (Jun–Aug) showed the highest revenue and units sold.
-
-Winter had strong profit performance due to holiday shopping.
-
-Spring and Fall showed moderate, stable trends.
-
-
-
-📦 Product Sales Contribution
-
-Footwear: ~40% of total sales
-
-Apparel: ~35%
-
-Accessories and Equipment: ~25% combined
-
-
-> 🔹 Footwear not only leads in revenue but also shows strong operating profit margins.
-
-
-
-💰 Operating Profit Analysis
-
-Operating Profit = Total Profit - (0.15 × Total Revenue)
-
-Products with high volume and medium pricing had the best profitability.
-
-Average Operating Profit Margin across the dataset: 18–22%
+* Recommend data-driven strategies
 
 
 
 ---
 
-📊 Visualizations
+# 🔍 Exploratory Data Analysis (EDA)
 
-Visual insights were created using Python libraries such as matplotlib, seaborn, and plotly:
+# 🛒 Sales Method Analysis
 
-Sales by Method (Bar Chart)
+* Online is the dominant channel, generating over 40% of total revenue, followed by Outlet.
 
-Monthly Revenue Trends (Line Chart)
+* Online also had highest transactions followed by Outlet method
 
-Seasonal Revenue Heatmap
 
-Product Sales % (Pie Chart)
+# 📅 Time-Based Analysis
 
-Operating Profit by Product (Bar Chart)
+**Monthly Trends:**
+
+* Peak months in 2020 : April, March, September
+* Lowest sales observed in 2020 :  December and June
+
+* Peak months in 2021 : December and July
+* Lowest sales observed in 2021 : February and March
+
+
+**Yearly Trends:**
+
+* Year-over-year growth in total revenue and profit.
+
+* Profit margins improved marginally each year.
+
+
+**Seasonal Analysis:**
+
+* Summer (Jun–Aug) showed the highest revenue and units sold.
+
+* Summer had strong profit performance due to holiday shopping.
+
+* Spring and Autumn showed moderate, stable trends.
+
+
+
+# 📦 Product Sales Contribution
+
+* Footwear: 70% of total sales
+
+* Apparel: 30%
+
+* Accessories and Equipment: ~25% combined
+
+
+* 🔹 Footwear not only leads in revenue but also shows strong operating profit margins.
+
+
+
+# 💰 Operating Profit Analysis
+
+* Products like men's wear and women apparel had the best operating profit
+
+* Women athletic footware had the lowest operating profit
+
+* Average Operating Profit Margin across the dataset: 23-12%
 
 
 
 ---
 
-📈 Key Insights
+#📊 Visualizations
 
-Retail & Footwear are core to Adidas’ sales success.
+* Visual insights were created using Python libraries such as matplotlib, seaborn, and plotly:
 
-Online sales are growing rapidly—especially post-spring.
+* Sales by Method (Bar Chart)
 
-Summer is the most profitable season across all years.
+* Monthly Revenue Trends (Line Chart)
 
-Certain regions like North America outperform others by a wide margin.
+* Seasonal Revenue (Line chart)
 
-Apparel has slightly lower margins compared to footwear, despite strong sales.
+* Operating Profit by Product (Bar Chart)
+
+* Count of products sold (Count chart)
 
 
 
 ---
 
-✅ Business Recommendations
+# 📈 Key Insights
+
+* Men's street footware and women's apparel are core to Adidas’ sales success.
+
+* Online sales are growing rapidly—especially post-spring.
+
+* Summer is the most profitable season across all years.
+
+* Certain regions like West outperform others by a wide margin.
+
+* Apparel has slightly lower margins compared to Men's street footwear, despite strong sales.
+
+
+
+---
+
+# ✅ Business Recommendations
 
 1. Invest in Online Infrastructure
 Enhance digital platforms and campaigns for Q2–Q3 to capitalize on online growth.
@@ -166,39 +168,14 @@ Allocate more resources to regions like North America and explore similar market
 6. Improve Wholesale Channel Margins
 Review pricing strategy for wholesale partners and consider exclusive deals.
 
-
-
-
 ---
 
-🗂️ Project Structure
+# 🛠 Tools & Libraries
 
-adidas-sales-analysis/
-│
-├── data/
-│   └── adidas_sales_dataset.csv
-├── notebooks/
-│   └── adidas_analysis.ipynb
-├── visuals/
-│   ├── sales_by_method.png
-│   ├── monthly_sales_trend.png
-│   ├── seasonal_heatmap.png
-│   ├── product_sales_percent_pie.png
-│   └── operating_profit_bar.png
-├── README.md
-└── requirements.txt
+* Python 
 
+* Pandas, NumPy (Data manipulation)
 
----
+* Matplotlib, Seaborn, Plotly (Data visualization)
 
-🛠️ Tools & Libraries
-
-Python 3.x
-
-Pandas, NumPy (Data manipulation)
-
-Matplotlib, Seaborn, Plotly (Data visualization)
-
-Jupyter Notebook
-
-Optional: Streamlit for dashboard deployment
+* Jupyter Notebook
